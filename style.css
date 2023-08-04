@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --font-p: 15px;
+  --font-family: "Overpass", sans-serif;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--Very-Dark-Blue);
+}
+
+main {
+  margin: 0 auto;
+  background-color: var(--Very-Dark-Blue);
+  height: 70%;
+  padding: 30px;
+  max-width: 418px;
+  border-radius: 15px;
+  margin-top: 0px;
+}
+h1 {
+  color: var(--White);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  margin: 20px 0px;
+  line-height: 1;
+}
+
+div.selected-content p {
+  font-family: var(--font-family);
+  color: var(--Light-Grey);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.content p {
+  color-scheme: var(--Light-Grey);
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 25px;
+}
+.attribution a {
+  color: var(--Orange);
+  opacity: 0.85;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40%;
+  text-align: center;
+  color: var(--Light-Grey);
+}
+
+.card,
+.selected-card {
+  max-width: 375px;
+  display: block;
+  background-color: var(--Dark-Blue);
+  color: var(--Light-Grey);
+  margin-inline: auto;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.star {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: hsla(211, 19%, 23%, 0.956);
+  padding: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.star img {
+  width: 15px;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Medium-Grey);
+  margin: 25px 20px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background-color: hsla(211, 19%, 23%, 0.956);
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  border: none;
+}
+
+.btn:hover {
+  color: rgb(253, 197, 92);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--Orange);
+}
+
+.btn-submit {
+  width: 100%;
+  height: 45px;
+  background-color: var(--Orange);
+  color: var(--White);
+  text-align: center;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  letter-spacing: 2.7px;
+  border: none;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.btn-submit:hover {
+  background: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.card-display {
+  display: none;
+}
+
+/* ------ selected card version---------- */
+
+.selected-card-display {
+  display: none;
+}
+
+.selected-card {
+  text-align: center;
+}
+
+.selected-card img {
+  width: 140px;
+  margin: auto;
+}
+
+.you-selected > p {
+  color: var(--Orange);
+  background-color: hsla(211, 19%, 23%, 0.956);
+  border-radius: 30px;
+  max-width: max-content;
+  padding: 10px 20px;
+  line-height: 1;
+}
+
+.you-selected {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.selected-content {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .btn {
+    padding: 0 8px;
+    margin-right: 5px;
+  }
+  .rate {
+    margin: 25px 0px;
+  }
+}
